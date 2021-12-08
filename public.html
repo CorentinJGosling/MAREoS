@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>MAREoS benchmark</title>
+</head>
+
+<style>
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  height: 100vh;
+  width: 100;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 60;
+  color: #fff;
+  text-align: center;
+}
+
+ h2 {
+  margin-bottom: 40px;
+  color: white;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+}
+ h3 {
+  margin-top: 60px;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+.dwnld {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.dwnld a {
+  font-size: .7rem;
+  padding: 1rem 3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.text {
+  color: #fff;
+  border: 1px #fff solid;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5vh;
+  padding:20px;
+  font-weight: 200;
+  background-color: rgba(255,255,255,0.2);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 24px 10px, rgba(14, 30, 37, 0.7) 0px 2px 56px 25px;
+}
+
+
+.text h4 {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  font-size: 40px;
+  color: #201F20;
+  font-weight: bold;
+}
+
+span {
+  color: #3A3A3A; /*201F20*/
+}
+
+
+.container {
+  width: 95%;
+  margin: 0 auto
+}
+
+header {
+  background: #3A3A3A;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear:both;
+}
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  position: relative;
+  margin-left: 35px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight:100;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav li:hover{
+
+}
+nav a:hover {
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: #fff;
+
+  position: absolute;
+  top: 2px;;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.box {
+  color: #fff;
+  margin-left: 100px;
+  font-weight: 300;
+  text-indent: -3em;
+}
+.text h4{
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.text .comment{
+  margin-top: 10px;
+  line-height: 150%;
+}
+
+.text .list{
+  margin-top: 10px;
+  line-height: 150%;
+}
+
+/*.background a{
+  color: #fff;
+  text-decoration: none;
+  border: solid 2px #fff;
+  padding: 10px 20px;
+  font-weight 500;
+}*/
+
+
+
+.dwnld .btn {
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgb(146, 148, 248);
+
+}
+
+.dwnld .btn:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.dwnld .btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  transition: all 650ms;
+}
+
+ .dwnld .btn:hover:before {
+   color: #fff;
+   left: 0%;
+   background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(146, 148, 248, 0.4),
+    transparent
+  );
+}
+@media screen and (max-width: 850px){
+
+  nav li {
+    display: block;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+
+  }
+  nav {
+    width: calc(100% - 0%);
+  }
+
+  nav a{
+    font-size: 14px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  h1 {
+   font-size: 30px;
+ }
+
+  h2 {
+   font-size: 18px;
+ }
+
+  h4 {
+   font-size: 16px;
+ }
+
+
+ .text{
+   font-size: 14px;
+ }
+ h3 {
+  font-size: 14px;
+}
+}
+</style>
+
+
+<header>
+  <div class = "container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#"  style="font-weight:500">Public datasets</a></li>
+        <li><a href="upload.html">Upload</a></li>
+        <li><a href="benchmark.html">Benchmark</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<body>
+
+<!--title area starts-->
+    <h1>Public datasets.</h1>
+    <h2>Download the 10 public datasets to measure the effects of the site (EoS)-removal efficacy of a MAREoS.</h2>
+    <div class = "dwnld">
+      <a href="public_datasets.zip" class="btn">Download public datasets</a>
+    </div>
+
+<!--title area ends-->
+<div class = "text">
+<h4><i class="fas fa-chevron-right"></i> General instructions</h4>
+  <div class = "comment">For each fold of the ten-fold cross-validation, find the effects of site and the two clinical covariates in the training set, remove them from both the training and the test sets,
+    fit a logistic regression with first-order interactions in the training set, and predict the response in the test set.</div>
+
+<h4><i class="fas fa-chevron-right"></i> Example for fold 1</h4>
+  <ol><li><div class = "list">Find the effects of the site and the two clinical covariates using individuals labeled to be in folds 2 to 10 (the "training set"). To find the effects of the covariates, fit linear regressions. To find the effects of the site, fit the MAREoS of interest.</div></li>
+    <li><div class = "list">Remove the effects of the covariates and the site from these individuals and fit a logistic regression with first-order interactions. To remove the effects, use the models fitted at step 1. In the logistic regression, the dependent variable is the response to the treatment, and the independent variables are the subcortical volumes and their first-order interactions.</div></li>
+    <li><div class = "list">Remove the effects of the covariates and the site from individuals labeled to be in fold 1 (the "test set") and predict their response to the treatment. To remove the effects, use the models fitted at step 1.</div></li>
+    <li><div class = "list">Find the sensitivity, specificity, and balanced accuracy.</div></li>
+</ol>
+</div>
+</body>
+
+</html>

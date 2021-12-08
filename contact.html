@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>MAREoS benchmark - contact</title>
+</head>
+
+
+
+<style>
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 60;
+  color: #fff;
+  text-align: center;
+}
+
+ h2 {
+  margin-bottom: 40px;
+  color: white;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+}
+.content{
+  width: (100%);
+  margin-top: 10px;
+  margin-left: 0px;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+
+.content p{
+  /*background: #CDD9FF;*/
+  padding: 2px;
+  margin-top: 5px;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+/* Float four columns side by side */
+.content .column {
+  float: left;
+  width: 36%;
+  padding: 5px;
+  }
+
+.content .row {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+  .content .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contain{
+    width: 80%;
+    height: calc(300px + 117px);
+    /*background-color: #3F4854;*/
+    background: linear-gradient(45deg, #5f2c82,  #49a09d);
+    color: #fff;
+    padding-bottom: 50px;
+    border: solid 1px #fff;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius:10px;
+}
+.contain:hover{
+/*    background-color: #A6B0BB;*/
+opacity: 0.9;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 24px 10px, rgba(14, 30, 37, 0.7) 0px 2px 56px 25px;
+transform: scale(1.02398) translateZ(0) perspective(11px);
+transition: 0.8s;
+
+}
+
+.contain .photo{
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.contain .photo2{
+  display: block;
+  width: 100%;
+  height:100%;
+  border-radius: 10px;
+  border: solid #fff 1px
+}
+
+.flip-card {
+  width: 280px;
+  height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  border-radius: 10px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 10px;
+  font-family:  system-ui;
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #fff;
+  color: black;
+  transform: rotateY(180deg);
+  border: solid black 1px;
+}
+
+
+.content .desc{
+  background-color: inherit;
+  height: 130px;
+}
+
+.content .desc .desc_name{
+  padding-top: 15px;
+  font-size: 19px;
+  font-weight: 950;
+  margin-bottom: 12px;
+  text-align: center;
+
+}
+
+.content .desc .desc_title{
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  color: #F8BA6C;
+  margin-bottom: 8px;
+
+}
+
+.content .desc .desc_affiliation{
+  font-size: 14px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family:  system-ui;
+
+}
+.content .desc .desc_lastaffiliation1{
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family:  system-ui;
+
+}
+.content .desc .desc_lastaffiliation2{
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family:  system-ui;
+
+}
+.content .desc .desc_image{
+  text-align: center;
+}
+
+.content .desc .desc_image .desc_image1{
+  display: inline-block;
+  margin-right: 5px;
+}
+.content .desc .desc_image .desc_image2{
+  display: inline-block;
+  margin-right: 5px;
+}
+.content .desc .desc_image .desc_image3{
+  display: inline-block;
+  margin-right: 5px;
+}
+.content .desc .desc_image .desc_image4{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.button{
+  color: #fff;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto
+}
+
+header {
+  background: #3A3A3A;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear:both;
+}
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  position: relative;
+  margin-left: 35px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight:100;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav a:hover {
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: #fff;
+
+  position: absolute;
+  top: 2px;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px){
+  .content .row {
+    margin-left: 20px;
+}
+.contain{
+    width: 90%;
+}
+}
+@media screen and (max-width: 1030px){
+
+  nav li {
+    display: block;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+
+  }
+  nav {
+    width: calc(100% - 0%);
+  }
+
+  nav a{
+    font-size: 14px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  h1 {
+   font-size: 30px;
+ }
+
+  h2 {
+   font-size: 18px;
+ }
+
+  h4 {
+   font-size: 16px;
+ }
+
+
+ .text{
+   font-size: 14px;
+ }
+ h3 {
+  font-size: 14px;
+}
+.content .row {
+  margin-left: 50px;
+  display: block;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.content{
+  width: 100%;
+  margin-top: 0px;
+  margin-left: 0;
+}
+
+.contain{
+    width: 95%;
+}
+
+.content .column {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+
+}
+
+</style>
+
+<header>
+  <div class = "container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="public.html">Public datasets</a></li>
+        <li><a href="upload.html">Upload</a></li>
+        <li><a href="benchmark.html">Benchmark</a></li>
+        <li><a href="#" style="font-weight:500">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<body>
+  <h1>Our team.</h1>
+  <h2>Discover some information on each member of our team!</h2>
+
+  <div class="content">
+          <div class="row">
+            <div class="column">
+              <div class="contain">
+              <!--  <div class="photo"><img src="man.png" style="width: 250px; height:285px; border: solid blue 2px"></div>-->
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="photo_solanes-resized.jpg" class="photo2">
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Dr. Aleix Solanes Font earned his PhD in Computer engineering in 2021 at the University of Barcelona.</p>
+                      <p>He has a lot of experience in applying machine learning, deep learning and statistical techniques to neuroimaging and clinical data. He is the programmer of several softwares related to neuroimaging topics.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class = "desc">
+                    <div class = "desc_name">ALEIX SOLANES</div>
+                    <div class = "desc_title">PhD</div>
+                    <div class = "desc_affiliation">Hospital Clínic de Barcelona, Spain</div>
+                    <div class = "desc_affiliation">&nbsp;</div>
+                    <div class = "desc_lastaffiliation1">&nbsp;</div>
+                    <div class = "desc_image">
+                        <div class = "desc_image1"><a href = "mailto: aal.solanes@gmail.com" class="button"><i class="fas fa-envelope"></i></a></div>
+                        <div class = "desc_image4"><a href = "https://es.linkedin.com/in/aleixsolanes" class="button" target="_blank"><i class="fas fa-university"></i></a></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="contain">
+              <!--  <div class="photo"><img src="man.png" style="width: 250px; height:285px; border: solid blue 2px"></div>-->
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="photo_gosling-resized.jpg" class="photo2">
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Dr. Corentin J. Gosling is an associate professor of neuropsychology at Paris Nanterre University.</p>
+                      <p>His research interests focus on the diagnosis and clinical interventions for individuals with neurodevelopmental disorders.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class = "desc">
+                      <div class = "desc_name">CORENTIN J GOSLING</div>
+                      <div class = "desc_title">PhD</div>
+                      <div class = "desc_affiliation">Paris Nanterre University, France</div>
+                      <div class = "desc_affiliation">&nbsp;</div>
+                        <div class = "desc_lastaffiliation1">&nbsp;</div>
+                        <div class = "desc_image">
+                          <div class = "desc_image1"><a href = "mailto: corentin.gosling@parisnanterre.fr" class="button"><i class="fas fa-envelope"></i></a></div>
+                          <div class = "desc_image2"><a href = "https://github.com/CorentinJGosling" class="button" target="_blank"><i class="fab fa-github"></i></a></div>
+                          <div class = "desc_image4"><a href = "https://www.parisnanterre.fr/corentin-gosling--929655.kjsp?RH=1519826463065" class="button" target="_blank"><i class="fas fa-university"></i></a></div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="column">
+                <div class="contain">
+                <!--  <div class="photo"><img src="man.png" style="width: 250px; height:285px; border: solid blue 2px"></div>-->
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="photo_quim-resized.jpg" class="photo2">
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Dr. Joaquim Radua is a psychiatrist medical doctor and statistician interested in improving the treatment of psychiatric disorders.</p>
+                        <p>He is the developer of numerous methods for meta-analysis of neuroimaging studies and he has been named as one of the most cited researchers in Psychiatry and Psychology.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class = "desc">
+                    <div class = "desc_name">JOAQUIM RADUA</div>
+                    <div class = "desc_title">MD, PhD</div>
+                    <div class = "desc_affiliation">Hospital Clínic de Barcelona, Spain</div>
+                      <div class = "desc_affiliation">King's College London, UK</div>
+                      <div class = "desc_lastaffiliation2">Karolinska Institutet, Sweden</div>
+                      <div class = "desc_image">
+                    <div class = "desc_image1"><a href = "mailto: quimradua@gmail.com" class="button"><i class="fas fa-envelope"></i></a></div>
+                    <div class = "desc_image4"><a href = "https://www.radua.net/" class="button" target="_blank"><i class="fas fa-university"></i></a></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+</body>
+
+</html>
